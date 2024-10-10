@@ -51,13 +51,25 @@ A comprehensive movie search application that allows users to explore and manage
    npm install
    ```
 
-4. Start the development server:
+4. Create a `.env` file in the root of your project directory:
+
+   ```bash
+   touch .env
+   ```
+
+5. Add your OMDB API key to the `.env` file:
+
+   ```plaintext
+   OMDB_API_KEY=your_omdb_api_key_here
+   ```
+
+6. Start the development server:
 
    ```bash
    npm start
    ```
 
-5. Open your browser and go to `http://localhost:3000`.
+7. Open your browser and go to `http://localhost:3000`.
 
 ## Usage
 
