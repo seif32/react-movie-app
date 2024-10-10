@@ -1,73 +1,92 @@
 # usePopcorn
 
-A React-based web application that replicates the core features of IMDb, allowing users to browse, search, and explore movie details, ratings, and more.
+A comprehensive movie search application that allows users to explore and manage their favorite movies. Users can search for movies, view details, and keep track of watched films.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
-- **Search Movies and TV Shows**: Search for your favorite movies and TV shows.
-- **Detailed Information**: View details like cast, ratings, and summaries.
-- **Responsive Design**: Optimized for various screen sizes.
-- **React Router**: Seamless navigation between pages.
-- **API Integration**: Fetch data using a public movie API.
+- **Movie Search**: Users can search for movies by title using the OMDB API.
+- **Watched List**: Users can add movies to their watched list, which is stored in local storage.
+- **Movie Details**: Users can view detailed information about each movie, including ratings and summaries.
+- **Responsive Design**: The application is designed to work seamlessly across different devices.
 
-## Tech Stack
+## Technologies Used
 
-- **Frontend**: React, React Router, Context API for state management.
-- **Styling**: CSS/SCSS, Material UI for user-friendly components.
-- **Backend**: json-server for mock API data (for testing purposes).
+- **Frontend**:
+  - React
+  - JavaScript
+  - CSS
+- **APIs**:
+  - OMDB API for movie data
+- **State Management**:
+  - React Hooks (useState, useEffect)
+  - Custom Hooks (useMovies, useLocalStorage)
 
-## Getting Started
+## Installation
 
-To run this project locally, follow these steps:
-
-1. **Clone the repository**:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/seif32/react-movie-app.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
    cd react-movie-app
    ```
 
-2. **Install dependencies**:
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. **Start the development server**:
+4. Start the development server:
 
    ```bash
    npm start
    ```
 
-   The app will be available at `http://localhost:3000`.
+5. Open your browser and go to `http://localhost:3000`.
 
-4. **Mock API Setup**:
-   - Install json-server globally if not installed:
-     ```bash
-     npm install -g json-server
-     ```
-   - Run the json-server:
-     ```bash
-     json-server --watch db.json --port 5000
-     ```
+## Usage
 
-## Folder Structure
-
-```
-├── public/
-├── src/
-│   ├── components/   # Reusable React components
-│   ├── pages/        # Main pages like Home, MovieDetail, etc.
-│   ├── assets/       # Images, icons, and other assets
-│   ├── services/     # API service files
-│   ├── App.js        # Main App component
-│   └── index.js      # Entry point
-├── .gitignore
-├── package.json
-├── README.md
-└── db.json           # Mock data for json-server
-```
+1. **Search for Movies**: Enter a movie title in the search bar and press Enter.
+2. **View Movie Details**: Click on a movie to view its details.
+3. **Add to Watched List**: Click the button to add a movie to your watched list.
+4. **View Watched Movies**: The watched list displays the movies you've watched.
 
 ## Contributing
 
-Feel free to open issues or make pull requests if you find any bugs or have feature suggestions.
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+
+3. Make your changes and commit them:
+
+   ```bash
+   git commit -m "Add some feature"
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. Open a pull request.
