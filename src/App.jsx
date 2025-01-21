@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import NavBar from "./components/NavBar";
 import Main from "./components/Main";
@@ -12,12 +12,9 @@ import WatchedSummary from "./components/WatchedSummary";
 import WatchedMoviesList from "./components/WatchedMoviesList";
 import Loader from "./components/Loader";
 import ErrorMessage from "./components/ErrorMessage";
-import Movie from "./components/Movie";
 import SelectedMovie from "./components/SelectedMovie";
 import useMovies from "./hooks/useMovies";
 import useLocalStorage from "./hooks/useLocalStorage";
-
-const KEY = "44cbb965";
 
 export default function App() {
   const [query, setQuery] = useState("");
